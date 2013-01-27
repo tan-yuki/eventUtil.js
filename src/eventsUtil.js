@@ -1,5 +1,6 @@
 (function(__global__) {
-    var handlers = {};
+    var handlers = {},
+        shift = Array.prototype.shift;
 
     var eventsUtil = {
 
