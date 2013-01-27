@@ -2,7 +2,7 @@
     var handlers = {},
         shift = Array.prototype.shift;
 
-    var eventsUtil = {
+    var eventUtil = {
 
         handlers: {},
 
@@ -27,14 +27,14 @@
          * @param {String}   evname  Event name
          * @param {Function} func    Function
          *
-         * @see mvc.util.events.on
+         * @see eventUtil.on
          */
         once: function(evname, func) {
             this.on(evname, func, true);
         },
 
         /**
-         * Fire registered events
+         * Fire registered event
          *
          * <pre>
          * arg0:     event name
@@ -77,7 +77,7 @@
 
     };
 
-    __global__.eventsUtil = eventsUtil;
+    __global__.eventUtil = eventUtil;
 
 })(this);
 
